@@ -1,0 +1,23 @@
+<!-- <link href="/static/home/css/btn.css" rel="stylesheet"> -->
+<table> 
+    <tbody>
+            
+      
+ <td v-for="i in pageList">
+                       
+                        <span v-if=" i == '...' ">
+                             <span v-text="i"></span>
+                        </span>
+                        <span v-else>                          
+                            <span v-if=" i == page ">                               
+                                <a  v-bind:href="i"  class="btn btn-lg btn-primary"> <span v-text="i"></span> </a>                              
+                            </span>
+                            <span v-else>                                             
+                                <a v-bind:href="i" class="btn btn-lg btn-default"><span v-text="i"></span></a>
+                                                            
+                            </span>
+                        </span>                                 
+                </td>
+    <tbody>
+            
+      <table>
